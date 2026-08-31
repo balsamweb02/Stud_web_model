@@ -8,6 +8,7 @@
 </head>
 <body>
 <div class="app">
+  <input type="checkbox" id="navToggle" class="nav-toggle-input">
   <aside class="sidebar">
       <div class="brand">
         <div class="brand-mark">SP</div>
@@ -19,8 +20,10 @@
         <a class="switch-role" href="admin-dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>Preview admin side</a>
       </div>
     </aside>
+  <label for="navToggle" class="sidebar-backdrop" aria-hidden="true"></label>
   <div class="main">
     <header class="topbar">
+      <label for="navToggle" class="hamburger-btn" aria-label="Toggle menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></label>
       <div>
         <div class="crumb">Student / <b>Certificate</b></div>
       </div>

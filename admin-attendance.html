@@ -8,6 +8,7 @@
 </head>
 <body>
 <div class="app">
+  <input type="checkbox" id="navToggle" class="nav-toggle-input">
   <aside class="sidebar">
       <div class="brand">
         <div class="brand-mark">SP</div>
@@ -19,8 +20,10 @@
         <a class="switch-role" href="student-dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>Preview student side</a>
       </div>
     </aside>
+  <label for="navToggle" class="sidebar-backdrop" aria-hidden="true"></label>
   <div class="main">
     <header class="topbar">
+      <label for="navToggle" class="hamburger-btn" aria-label="Toggle menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></label>
       <div>
         <div class="crumb">Admin / <b>Attendance</b></div>
       </div>
@@ -61,7 +64,6 @@
         <label class="field"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg><select style="border:none;background:transparent;font-size:13px;color:var(--ink);outline:none;"><option>All courses</option><option>Full Stack Development</option><option>Data Analysis</option></select></label>
         <label class="field"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg><select style="border:none;background:transparent;font-size:13px;color:var(--ink);outline:none;"><option>All status</option><option>Present</option><option>Absent</option><option>Leave</option></select></label>
       </div>
-      <div class="filters"><a class="btn btn-outline" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>Import</a><a class="btn btn-outline" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>Export</a></div>
     </div></div><div class="table-wrap">
       <table class="data-table"><thead><tr><th>Reg. No.</th><th>Student</th><th>Topic</th><th>Date</th><th>Status</th><th>Actions</th></tr></thead><tbody><tr><td>REG001</td><td>Anitha Kumar</td><td>HTML</td><td>02 Sep 2026</td><td><span class="badge success">Present</span></td><td><a class="row-link" href="admin-attendance-add.html">Edit</a></td></tr><tr><td>REG002</td><td>Hari Santhoshini</td><td>HTML</td><td>02 Sep 2026</td><td><span class="badge success">Present</span></td><td><a class="row-link" href="admin-attendance-add.html">Edit</a></td></tr><tr><td>REG003</td><td>Karthika</td><td>HTML</td><td>02 Sep 2026</td><td><span class="badge danger">Absent</span></td><td><a class="row-link" href="admin-attendance-add.html">Edit</a></td></tr></tbody></table>
     </div><div class="table-foot"><span>Showing 3 of 42 records for 02 Sep 2026</span><div class="pagination"><a href="#">‹</a><a href="#" class="active">1</a><a href="#">2</a><a href="#">›</a></div></div></div>
@@ -93,9 +95,9 @@
 .cal-legend{display:flex;gap:16px;flex-wrap:wrap;font-size:11.5px;color:var(--muted);}
 .cal-legend span{display:flex;align-items:center;gap:6px;}
 .cal-dot{width:8px;height:8px;border-radius:50%;display:inline-block;}
-.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;}
+.cal-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;}
 .cal-wd{text-align:center;font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;padding-bottom:4px;}
-.cal-cell{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;aspect-ratio:1/0.85;border-radius:9px;border:1px solid var(--border);background:var(--surface);padding:8px 4px;}
+.cal-cell{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;aspect-ratio:1/0.85;border-radius:9px;border:1px solid var(--border);background:var(--surface);padding:8px 4px;min-width:0;overflow:hidden;}
 .cal-cell:hover{border-color:var(--blue);}
 .cal-daynum{font-size:12.5px;font-weight:700;color:var(--ink);}
 .cal-muted{opacity:.35;pointer-events:none;}
@@ -106,6 +108,19 @@
 .cal-pct.cal-mid{background:var(--warning-bg);color:var(--warning);}
 .cal-pct.cal-low{background:var(--danger-bg);color:var(--danger);}
 .cal-today{border:2px solid var(--blue);}
+@media (max-width:640px){
+  .cal-toolbar{flex-direction:column;align-items:flex-start;gap:12px;}
+  .cal-grid{gap:4px;}
+  .cal-cell{padding:5px 2px;border-radius:6px;aspect-ratio:1/0.75;}
+  .cal-daynum{font-size:10.5px;}
+  .cal-pct{font-size:8.5px;padding:1px 4px;}
+  .cal-note{font-size:7.5px;}
+  .cal-wd{font-size:9px;}
+  .cal-legend{gap:10px;font-size:10px;}
+}
+@media (max-width:420px){
+  .cal-pct{display:block;margin-top:1px;}
+}
 </style>
         </div>
       </div>
