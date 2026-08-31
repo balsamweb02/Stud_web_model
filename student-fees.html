@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Fees · Student Management Portal</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">SP</div>
+        <div class="brand-text"><div class="name">Student Portal</div><div class="role">Student workspace</div></div>
+      </div>
+      <div class="nav-section-label">Menu</div>
+      <nav class="nav"><a class="nav-item" href="student-dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg><span>Dashboard</span></a><a class="nav-item" href="student-profile.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg><span>My Profile</span></a><a class="nav-item" href="student-learning.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg><span>My Learning</span></a><a class="nav-item" href="student-attendance.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><span>Attendance</span></a><a class="nav-item active" href="student-fees.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg><span>My Fees</span></a><a class="nav-item" href="student-assessments.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg><span>My Assessments</span></a><a class="nav-item" href="student-completion.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg><span>Course Completion</span></a><a class="nav-item" href="student-project.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg><span>Projects</span></a><a class="nav-item" href="student-certificate.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg><span>Certificate</span></a><a class="nav-item" href="student-placement.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg><span>Placement</span></a><a class="nav-item" href="student-notifications.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span>Notifications</span></a></nav>
+      <div class="sidebar-foot">
+        <a class="switch-role" href="admin-dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>Preview admin side</a>
+      </div>
+    </aside>
+  <div class="main">
+    <header class="topbar">
+      <div>
+        <div class="crumb">Student / <b>My Fees</b></div>
+      </div>
+      <label class="search-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg><input type="text" placeholder="Search students, courses, records..."></label>
+      <div class="topbar-right">
+        <div class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span class="dot"></span></div>
+        <div class="avatar-chip">
+          <div class="avatar">AK</div>
+          <div class="who"><div class="n">Anitha Kumar</div><div class="r">Reg. No. REG001</div></div>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="page-head">
+      <div><h1>My fees</h1><div class="sub">View your course fee, payments and next due date.</div></div>
+      <div class="page-head-actions"></div>
+    </div><div class="card">
+      <div class="card-head"><div><h3></h3></div><div class="page-head-actions"></div></div>
+      <div class="card-body"><div class="tabset">
+      <input type="radio" name="tb13" id="tb13-0" class="tab-input" checked><input type="radio" name="tb13" id="tb13-1" class="tab-input" >
+      <div class="tab-bar"><label for="tb13-0">Overview</label><label for="tb13-1">Payment History</label></div>
+      <div class="tab-panels"><div class="tab-panel" id="tb13-0-panel"><div class="kpi-grid"><div class="kpi-card">
+      <div class="kpi-top"><div class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></div></div>
+      <div class="kpi-value">₹60,000</div>
+      <div class="kpi-label">Total course fee</div>
+    </div><div class="kpi-card">
+      <div class="kpi-top"><div class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div></div>
+      <div class="kpi-value">₹42,000</div>
+      <div class="kpi-label">Amount paid</div>
+    </div><div class="kpi-card">
+      <div class="kpi-top"><div class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></div><span class="kpi-trend up">down</span></div>
+      <div class="kpi-value">₹18,000</div>
+      <div class="kpi-label">Balance</div>
+    </div><div class="kpi-card">
+      <div class="kpi-top"><div class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div></div>
+      <div class="kpi-value">15 Sep 2026</div>
+      <div class="kpi-label">Next due</div>
+    </div></div></div><div class="tab-panel" id="tb13-1-panel"><div class="table-wrap">
+      <table class="data-table"><thead><tr><th>Date</th><th>Amount</th><th>Mode</th><th>Status</th><th>Receipt</th></tr></thead><tbody><tr><td>14 Aug 2026</td><td>₹12,000</td><td>UPI</td><td><span class="badge success">Paid</span></td><td><a class="row-link" href="#">View</a></td></tr><tr><td>15 Jul 2026</td><td>₹15,000</td><td>Bank Transfer</td><td><span class="badge success">Paid</span></td><td><a class="row-link" href="#">View</a></td></tr><tr><td>10 Jun 2026</td><td>₹15,000</td><td>UPI</td><td><span class="badge success">Paid</span></td><td><a class="row-link" href="#">View</a></td></tr></tbody></table>
+    </div></div></div>
+      <style>#tb13-0:checked ~ .tab-bar label[for="tb13-0"]{color:var(--blue);border-bottom-color:var(--blue);} #tb13-0:checked ~ .tab-panels #tb13-0-panel{display:block;}#tb13-1:checked ~ .tab-bar label[for="tb13-1"]{color:var(--blue);border-bottom-color:var(--blue);} #tb13-1:checked ~ .tab-panels #tb13-1-panel{display:block;}</style>
+    </div></div>
+    </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

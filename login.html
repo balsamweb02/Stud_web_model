@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign in · Student Management Portal</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div class="login-shell">
+  <div class="login-visual">
+    <div class="brand">
+      <div class="brand-mark">SP</div>
+      <div class="brand-text"><div class="name">Student Portal</div><div class="role">Institute management, in one place</div></div>
+    </div>
+    <div>
+      <div class="headline">Every student record, course and payment — tracked in a single standalone database.</div>
+      <div class="sub">Manage admissions, attendance, assignments, fees and placement for your institute. Data moves to and from your IMS only through controlled Excel/CSV import and export — never a live connection.</div>
+    </div>
+    <div class="quote">Trusted by academic teams to run daily operations without touching production systems.</div>
+  </div>
+  <div class="login-form-side">
+    <div class="login-card">
+      <h1>Welcome back</h1>
+      <div class="sub">Sign in to continue to your workspace</div>
+
+      <input type="radio" name="role" id="role-admin" style="display:none" checked>
+      <input type="radio" name="role" id="role-student" style="display:none">
+      <style>
+        #role-admin:checked ~ .login-tabs label[for="role-admin"],
+        #role-student:checked ~ .login-tabs label[for="role-student"]{ background:#fff; color:var(--navy); box-shadow:var(--shadow-1); }
+        #role-admin:checked ~ .role-panel.admin{ display:block; }
+        #role-student:checked ~ .role-panel.student{ display:block; }
+        .role-panel{ display:none; }
+      </style>
+      <div class="login-tabs">
+        <label for="role-admin">Admin</label>
+        <label for="role-student">Student</label>
+      </div>
+
+      <div class="role-panel admin">
+        <form>
+          <div class="form-group" style="margin-bottom:16px;">
+            <label>Email or Registration Number</label>
+            <input type="text" placeholder="admin@instituteexample.com">
+          </div>
+          <div class="form-group" style="margin-bottom:10px;">
+            <label>Password</label>
+            <input type="password" placeholder="••••••••••">
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+            <label class="small-note"><input type="checkbox" style="margin-right:6px;">Remember me</label>
+            <a class="link-plain" href="#" style="font-size:12.5px;">Forgot password?</a>
+          </div>
+          <a class="btn btn-primary btn-block" href="admin-dashboard.html">Sign in as Admin</a>
+        </form>
+      </div>
+
+      <div class="role-panel student">
+        <form>
+          <div class="form-group" style="margin-bottom:16px;">
+            <label>Registration Number</label>
+            <input type="text" placeholder="REG001">
+          </div>
+          <div class="form-group" style="margin-bottom:10px;">
+            <label>Password</label>
+            <input type="password" placeholder="••••••••••">
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+            <label class="small-note"><input type="checkbox" style="margin-right:6px;">Remember me</label>
+            <a class="link-plain" href="#" style="font-size:12.5px;">Forgot password?</a>
+          </div>
+          <a class="btn btn-primary btn-block" href="student-dashboard.html">Sign in as Student</a>
+        </form>
+      </div>
+
+      <div class="small-note" style="text-align:center;margin-top:22px;">Role-based access · Data stored in the Student DB only</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

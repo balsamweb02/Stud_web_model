@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Details · Student Management Portal</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">SP</div>
+        <div class="brand-text"><div class="name">Student Portal</div><div class="role">Administrator workspace</div></div>
+      </div>
+      <div class="nav-section-label">Menu</div>
+      <nav class="nav"><a class="nav-item" href="admin-dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg><span>Dashboard</span></a><a class="nav-item" href="admin-students.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg><span>Students</span></a><a class="nav-item active" href="admin-courses.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg><span>Courses</span></a><a class="nav-item" href="admin-attendance.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><span>Attendance</span></a><a class="nav-item" href="admin-materials.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg><span>Learning Materials</span></a><a class="nav-item" href="admin-assignments.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg><span>Assignments & Tasks</span></a><a class="nav-item" href="admin-projects.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg><span>Projects</span></a><a class="nav-item" href="admin-fees.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg><span>Fees</span></a><a class="nav-item" href="admin-assessments.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg><span>Assessments</span></a><a class="nav-item" href="admin-completion.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg><span>Course Completion</span></a><a class="nav-item" href="admin-certificates.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg><span>Certificates</span></a><a class="nav-item" href="admin-placement.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg><span>Placement</span></a><a class="nav-item" href="admin-notifications.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span>Notifications</span></a><a class="nav-item" href="admin-data-transfer.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg><span>Data Transfer</span></a><a class="nav-item" href="admin-reports.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg><span>Reports</span></a><a class="nav-item" href="admin-settings.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg><span>Settings</span></a></nav>
+      <div class="sidebar-foot">
+        <a class="switch-role" href="student-dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>Preview student side</a>
+      </div>
+    </aside>
+  <div class="main">
+    <header class="topbar">
+      <div>
+        <div class="crumb">Admin / Courses / <b>Full Stack Development</b></div>
+      </div>
+      <label class="search-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg><input type="text" placeholder="Search students, courses, records..."></label>
+      <div class="topbar-right">
+        <div class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span class="dot"></span></div>
+        <div class="avatar-chip">
+          <div class="avatar">AK</div>
+          <div class="who"><div class="n">Anitha Kumar</div><div class="r">Admin</div></div>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="page-head">
+      <div><h1>Course details</h1><div class="sub">Flow: View course → course details → enrolled students.</div></div>
+      <div class="page-head-actions"></div>
+    </div><div class="card"><div class="card-body">
+      <div class="profile-head">
+        <div class="profile-id">
+          <div class="profile-avatar">FS</div>
+          <div><h2>Full Stack Development</h2><div class="meta">6 Months · Faculty: Arun · 42 students enrolled</div></div>
+        </div>
+        <div class="page-head-actions"><a class="btn btn-outline" href="#" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4z"></path></svg>Edit course</a><a class="btn btn-primary" href="#" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>Manage enrollment</a></div>
+      </div>
+    </div></div><div class="card">
+      <div class="card-head"><div><h3></h3></div><div class="page-head-actions"></div></div>
+      <div class="card-body"><div class="tabset">
+      <input type="radio" name="tb2" id="tb2-0" class="tab-input" checked><input type="radio" name="tb2" id="tb2-1" class="tab-input" ><input type="radio" name="tb2" id="tb2-2" class="tab-input" ><input type="radio" name="tb2" id="tb2-3" class="tab-input" ><input type="radio" name="tb2" id="tb2-4" class="tab-input" ><input type="radio" name="tb2" id="tb2-5" class="tab-input" >
+      <div class="tab-bar"><label for="tb2-0">Overview</label><label for="tb2-1">Students / Enrollments</label><label for="tb2-2">Learning Materials</label><label for="tb2-3">Assignments</label><label for="tb2-4">Assessments</label><label for="tb2-5">Projects</label></div>
+      <div class="tab-panels"><div class="tab-panel" id="tb2-0-panel"><div class="info-list">
+      <div class="item"><div class="l">Course name</div><div class="v">Full Stack Development</div></div><div class="item"><div class="l">Duration</div><div class="v">6 Months</div></div>
+      <div class="item"><div class="l">Assigned faculty</div><div class="v">Arun</div></div><div class="item"><div class="l">Time slots</div><div class="v">10 AM – 11 AM, 4 PM – 5 PM</div></div>
+      <div class="item"><div class="l">Status</div><div class="v">Active</div></div><div class="item"><div class="l">Enrolled students</div><div class="v">42</div></div>
+    </div></div><div class="tab-panel" id="tb2-1-panel"><div class="table-wrap">
+      <table class="data-table"><thead><tr><th>Reg. No.</th><th>Student</th><th>Status</th></tr></thead><tbody><tr><td>REG001</td><td>Anitha Kumar</td><td><span class="badge success">Active</span></td></tr><tr><td>REG004</td><td>Kamal</td><td><span class="badge success">Active</span></td></tr><tr><td>REG006</td><td>Student Example</td><td><span class="badge warning">Pending</span></td></tr></tbody></table>
+    </div></div><div class="tab-panel" id="tb2-2-panel"><div class="table-wrap">
+      <table class="data-table"><thead><tr><th>Material</th><th>Type</th><th>Access</th></tr></thead><tbody><tr><td>HTML Notes</td><td>PDF</td><td><span class="badge success">Available</span></td></tr><tr><td>CSS Guide</td><td>PDF</td><td><span class="badge success">Available</span></td></tr></tbody></table>
+    </div></div><div class="tab-panel" id="tb2-3-panel"><div class="table-wrap">
+      <table class="data-table"><thead><tr><th>Assignment</th><th>Due date</th><th>Submissions</th></tr></thead><tbody><tr><td>JS DOM Task</td><td>02 Sep 2026</td><td>31 / 42</td></tr><tr><td>HTML Landing Page</td><td>05 Sep 2026</td><td>12 / 42</td></tr></tbody></table>
+    </div></div><div class="tab-panel" id="tb2-4-panel"><div class="table-wrap">
+      <table class="data-table"><thead><tr><th>Assessment</th><th>Date</th><th>Status</th></tr></thead><tbody><tr><td>Practical HTML/CSS</td><td>05 Sep 2026</td><td><span class="badge warning">Scheduled</span></td></tr></tbody></table>
+    </div></div><div class="tab-panel" id="tb2-5-panel"><div class="table-wrap">
+      <table class="data-table"><thead><tr><th>Project</th><th>Students assigned</th><th>Reviewed</th></tr></thead><tbody><tr><td>Student Portal Build</td><td>18</td><td>9</td></tr></tbody></table>
+    </div></div></div>
+      <style>#tb2-0:checked ~ .tab-bar label[for="tb2-0"]{color:var(--blue);border-bottom-color:var(--blue);} #tb2-0:checked ~ .tab-panels #tb2-0-panel{display:block;}#tb2-1:checked ~ .tab-bar label[for="tb2-1"]{color:var(--blue);border-bottom-color:var(--blue);} #tb2-1:checked ~ .tab-panels #tb2-1-panel{display:block;}#tb2-2:checked ~ .tab-bar label[for="tb2-2"]{color:var(--blue);border-bottom-color:var(--blue);} #tb2-2:checked ~ .tab-panels #tb2-2-panel{display:block;}#tb2-3:checked ~ .tab-bar label[for="tb2-3"]{color:var(--blue);border-bottom-color:var(--blue);} #tb2-3:checked ~ .tab-panels #tb2-3-panel{display:block;}#tb2-4:checked ~ .tab-bar label[for="tb2-4"]{color:var(--blue);border-bottom-color:var(--blue);} #tb2-4:checked ~ .tab-panels #tb2-4-panel{display:block;}#tb2-5:checked ~ .tab-bar label[for="tb2-5"]{color:var(--blue);border-bottom-color:var(--blue);} #tb2-5:checked ~ .tab-panels #tb2-5-panel{display:block;}</style>
+    </div></div>
+    </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
