@@ -348,7 +348,7 @@
     var sb = $('.search-box');
     if (sb) {
       if (ROLE === 'admin') {
-        var si = $('input', sb); si.placeholder = 'Search students by name or reg. no.';
+        document.body.classList.add('role-admin'); var si = $('input', sb); si.placeholder = 'Search students by name or reg. no.';
         si.addEventListener('keydown', function (e) { if (e.key === 'Enter' && si.value.trim()) location.href = 'admin-students.html?q=' + encodeURIComponent(si.value.trim()); });
       } else sb.style.visibility = 'hidden';
     }
@@ -416,3 +416,18 @@
   BP.schedDays = schedDays; BP.isWorkday = isWorkday; BP.daysLabel = daysLabel; BP.mkStudent = mkStudent; BP.logout = logout; BP.resetDemo = function () { LS.del(KEY); };
   if (document.readyState !== 'loading') setTimeout(boot, 0); else document.addEventListener('DOMContentLoaded', function () { setTimeout(boot, 0); });
 })();
+/* responsive tables: label every cell from its column header so the CSS can stack rows as cards on small screens */
+(function () {
+  var q = 0;
+  function lab(t) {
+    var h = [].map.call(t.querySelectorAll('thead th'), function (x) { return x.textContent.trim(); });
+    t.querySelectorAll('tbody tr').forEach(function (r) { [].forEach.call(r.children, function (td, i) { if (td.colSpan > 1) return; if (h[i] && td.getAttribute('data-label') !== h[i]) td.setAttribute('data-label', h[i]); }); });
+  }
+  function all() { q = 0; document.querySelectorAll('.content table').forEach(lab); }
+  function sched() { if (!q) q = requestAnimationFrame(all); }
+  function start() { all(); new MutationObserver(sched).observe(document.body, { childList: true, subtree: true }); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
+})();
+
+/* icon-rail tooltips */
+document.addEventListener('DOMContentLoaded', function () { document.querySelectorAll('.sidebar .nav-item').forEach(function (a) { var s = a.querySelector('span'); if (s && !a.title) a.title = s.textContent.trim(); }); });
