@@ -22,62 +22,17 @@
   <div class="login-form-side">
     <div class="login-card">
       <h1>Welcome back</h1>
-      <div class="sub">Sign in to continue to your workspace</div>
-
-      <input type="radio" name="role" id="role-admin" style="display:none" checked>
-      <input type="radio" name="role" id="role-student" style="display:none">
-      <style>
-        #role-admin:checked ~ .login-tabs label[for="role-admin"],
-        #role-student:checked ~ .login-tabs label[for="role-student"]{ background:#fff; color:var(--navy); box-shadow:var(--shadow-1); }
-        #role-admin:checked ~ .role-panel.admin{ display:block; }
-        #role-student:checked ~ .role-panel.student{ display:block; }
-        .role-panel{ display:none; }
-      </style>
-      <div class="login-tabs">
-        <label for="role-admin">Admin</label>
-        <label for="role-student">Student</label>
-      </div>
-
-      <div class="role-panel admin">
-        <form>
-          <div class="form-group" style="margin-bottom:16px;">
-            <label>Email or Registration Number</label>
-            <input type="text" placeholder="admin@instituteexample.com">
-          </div>
-          <div class="form-group" style="margin-bottom:10px;">
-            <label>Password</label>
-            <input type="password" placeholder="••••••••••">
-          </div>
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
-            <label class="small-note"><input type="checkbox" style="margin-right:6px;">Remember me</label>
-            <a class="link-plain" href="#" style="font-size:12.5px;">Forgot password?</a>
-          </div>
-          <a class="btn btn-primary btn-block" href="admin-dashboard.html">Sign in as Admin</a>
-        </form>
-      </div>
-
-      <div class="role-panel student">
-        <form>
-          <div class="form-group" style="margin-bottom:16px;">
-            <label>Registration Number</label>
-            <input type="text" placeholder="REG001">
-          </div>
-          <div class="form-group" style="margin-bottom:10px;">
-            <label>Password</label>
-            <input type="password" placeholder="••••••••••">
-          </div>
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
-            <label class="small-note"><input type="checkbox" style="margin-right:6px;">Remember me</label>
-            <a class="link-plain" href="#" style="font-size:12.5px;">Forgot password?</a>
-          </div>
-          <a class="btn btn-primary btn-block" href="student-dashboard.html">Sign in as Student</a>
-        </form>
-      </div>
-
-      <div class="small-note" style="text-align:center;margin-top:22px;">Role-based access · Data stored in the Student DB only</div>
+      <div class="sub">Sign in with the username and password given to you by the institute</div>
+      <div id="loginErr" class="login-err" style="display:none"></div>
+      <div class="form-group" style="margin-bottom:16px;"><label for="loginU">Username</label><input type="text" id="loginU" placeholder="Enter your username" autocomplete="username"></div>
+      <div class="form-group" style="margin-bottom:18px;"><label for="loginP">Password</label><input type="password" id="loginP" placeholder="Enter your password" autocomplete="current-password"></div>
+      <button type="button" class="btn btn-primary btn-block" id="loginBtn">Sign in</button>
+      <div class="small-note" style="text-align:center;margin-top:16px;">Forgot your password? Please contact your admin.</div>
+      <div id="resume" class="small-note" style="display:none;text-align:center;margin-top:8px;"><a class="link-plain" href="#">Continue where you left off</a></div>
+      <div class="demo-box"><b>Demo logins</b><span>Admin: <code>admin</code> / <code>admin123</code></span><span>Student: <code>anitha</code> / <code>anitha123</code></span></div>
     </div>
   </div>
 </div>
-<script src="app.js"></script>
+<script src="core.js"></script>
 </body>
 </html>
